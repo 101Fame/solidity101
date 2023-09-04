@@ -40,4 +40,16 @@ contract Calculator {
         uint256 result = base**exponent;
         return result;
     }
+
+    // Function to perform left shift operation
+    function leftShift(uint256 a, uint256 shift) public pure returns (uint256) {
+        uint256 result = a << shift;
+        return result;
+    }
+
+    // Function to perform right shift operation
+    function rightShift(uint256 a, uint256 shift) public pure returns (uint256) {
+        uint256 result = a >> shift;
+        return result;
+    }
 }
